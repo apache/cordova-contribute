@@ -50,5 +50,4 @@ Feel free to fork this repository and work on your fork. Existing forks are list
 - Reason for deprecation: ...
 - Learn more: https://example.org/article
 ---
-> Mailing list discussion on the topic:
-> https://lists.apache.org/thread.html/34369ada22f8a616e90471d38c8fd7def2eb17ff3ddbf4ba0b47987f@%3Cdev.cordova.apache.org%3E
+```

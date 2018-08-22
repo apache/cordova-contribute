@@ -8,4 +8,4 @@ This repository contains documents describing everything a contributor of Apache
 
 ### Process
 
-- [Deprecation Policy](deprecation.md)
+- [Deprecation and Archiving of Repositories](deprecation.md)

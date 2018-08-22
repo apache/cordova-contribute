@@ -24,33 +24,31 @@ For archiving:
 ## Deprecation and Archiving notice templates
 
 ### Deprecated Repository
+## Deprecation Notice Templates
+
+---
+**Deprecation Notice**
+
+This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is in the future but any more future issues will not be fixed by the Cordova community.
+
+Feel free to fork this repository and work on your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
+
+- Reason for deprecation: ...
+- Learn more: https://example.org/article
+---
+
+### Markdown
 
 ```markdown
 ---
 **Deprecation Notice**
-This repo is deprecated. No more development, we still might release security fixes and other necessary patch updates. Please find other way to solve the problem.
+
+This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is in the future but any more future issues will not be fixed by the Cordova community.
+
+Feel free to fork this repository and work on your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
+
 - Reason for deprecation: ...
-- Relevant links: ...
-Feel free to fork this repository and work on your fork. Your fork will show up in https://github.com/apache/cordova-.../network/member where other users can look for updated forks.
-
-No more work will be done on this plugin by the Cordova development community. You can continue to use this plugin and it should work as-is in the future but any more arising issues will not be fixed by the Cordova community.
----
-```
-
-### Archived Repository
-
-```markdown
----
-**Deprecation and Archiving Notice**
-This repo is archived. No more development.
-GitHub repository is archived, which means no more code changes, issues or pull requests.
-- Reason for deprecation: ...
-- Relevant links: ...
-Feel free to fork this repository and work on your fork.
----
-```
-
-
+- Learn more: https://example.org/article
 ---
 > Mailing list discussion on the topic:
 > https://lists.apache.org/thread.html/34369ada22f8a616e90471d38c8fd7def2eb17ff3ddbf4ba0b47987f@%3Cdev.cordova.apache.org%3E

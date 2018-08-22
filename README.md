@@ -6,3 +6,6 @@ This repository contains documents describing everything a contributor of Apache
 
 ## Topics
 
+### Process
+
+- [Deprecation Policy](deprecation.md)

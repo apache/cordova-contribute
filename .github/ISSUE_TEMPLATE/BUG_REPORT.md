@@ -31,8 +31,8 @@ Operating System, Android Studio, Xcode etc.
 -->
 
 ## Checklist
-<!-- Please check the boxes by putting an x in the [ ]: [x] -->
+<!-- Please check the boxes by putting an x in the [ ] like so: [x] -->
 
 - [ ] I searched for existing GitHub issues
 - [ ] I updated all Cordova tooling to most recent version
-- [ ] I included all the necessary information above 
+- [ ] I included all the necessary information above

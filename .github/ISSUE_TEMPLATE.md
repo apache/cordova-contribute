@@ -6,9 +6,9 @@ We very much prefer issues created by using one of these templates.
 ### Issue Type
 <!-- Please check the boxes by putting an x in the [ ] like so: [x] -->
 
-[ ] Bug Report
-[ ] Feature Request
-[ ] Support Question
+- [ ] Bug Report
+- [ ] Feature Request
+- [ ] Support Question
 
 ## Description
 

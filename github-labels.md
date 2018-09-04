@@ -17,7 +17,7 @@ The [default labels](https://help.github.com/articles/about-labels/#using-defaul
 - ![#a2eeef](https://placehold.it/20/a2eeef/000000?text=+) `enhancement`: ~~New feature or request~~ Changes to existing code
 - ![#7057ff](https://placehold.it/20/7057ff/000000?text=+) `good first issue`: Good for newcomers
 - ![#008672](https://placehold.it/20/008672/000000?text=+) `help wanted`: Extra attention is needed
-- ![#e4e669](https://placehold.it/20/d73a4a/000000?text=+) `invalid`: This doesn't seem right
+- ![#e4e669](https://placehold.it/20/e4e669/000000?text=+) `invalid`: This doesn't seem right
 - ![#d876e3](https://placehold.it/20/d876e3/000000?text=+) `question`: Further information is requested
 - ![#ffffff](https://placehold.it/20/ffffff/000000?text=+) `wontfix`: This will not be worked on
 

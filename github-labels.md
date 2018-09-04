@@ -12,14 +12,14 @@ The following defines the label names, label description and label color in use:
 
 The [default labels](https://help.github.com/articles/about-labels/#using-default-labels) created with new repositories offer a good baseline:
 
-- <div color="#d73a4a" style="background-color:#d73a4a; padding:3px 8px; border-radius: 3px; display:inline;">bug</div>: Something isn't working
-- <div style="background-color:#cfd3d7; padding:3px 8px; border-radius: 3px; display:inline;">duplicate</div>: This issue or pull request already exists
-- <div style="background-color:#a2eeef; padding:3px 8px; border-radius: 3px; display:inline;">enhancement</div>: ~~New feature or request~~ Changes to existing code
-- <div style="background-color:#7057ff; padding:3px 8px; border-radius: 3px; display:inline;">good first issue</div>: Good for newcomers
-- <div style="background-color:#008672; padding:3px 8px; border-radius: 3px; display:inline;">help wanted</div>: Extra attention is needed
-- <div style="background-color:#e4e669; padding:3px 8px; border-radius: 3px; display:inline;">invalid</div>: This doesn't seem right
-- <div style="background-color:#d876e3; padding:3px 8px; border-radius: 3px; display:inline;">question</div>: Further information is requested
-- <div style="background-color:#ffffff; padding:3px 8px; border-radius: 3px; display:inline;">wontfix</div>: This will not be worked on
+- ![#f03c15](https://placehold.it/20/d73a4a/000000?text=+) `bug`: Something isn't working
+- ![#cfd3d7](https://placehold.it/20/cfd3d7/000000?text=+) `duplicate`: This issue or pull request already exists
+- ![#a2eeef](https://placehold.it/20/a2eeef/000000?text=+) `enhancement`: ~~New feature or request~~ Changes to existing code
+- ![#7057ff](https://placehold.it/20/7057ff/000000?text=+) `good first issue`: Good for newcomers
+- ![#008672](https://placehold.it/20/008672/000000?text=+) `help wanted`: Extra attention is needed
+- ![#e4e669](https://placehold.it/20/d73a4a/000000?text=+) `invalid`: This doesn't seem right
+- ![#d876e3](https://placehold.it/20/d876e3/000000?text=+) `question`: Further information is requested
+- ![#ffffff](https://placehold.it/20/ffffff/000000?text=+) `wontfix`: This will not be worked on
 
 The label names `good first issue` and `help wanted` have [special meaning](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/) on GitHub.
 
@@ -29,18 +29,18 @@ The list above has some ~~strike through~~ text. These are our changes to the de
 
 ### Custom labels
 
-- <div style="background-color:#0e8a16; padding:3px 8px; border-radius: 3px; display:inline;">feature</div>: New functionality that requires new code
-- <div style="background-color:#1d76db; padding:3px 8px; border-radius: 3px; display:inline;">discussion</div>: Creator is open to suggestions or wants to discuss how something should be implemented
-- <div style="background-color:#ccc; padding:3px 8px; border-radius: 3px; display:inline;">support</div>: Support questions that want to understand how something works, need help debugging their individual problem etc. are closed and tagged with this label.
+- ![#0e8a16](https://placehold.it/20/0e8a16/000000?text=+) `feature`: New functionality that requires new code
+- ![#1d76db](https://placehold.it/20/1d76db/000000?text=+) `discussion`: Creator is open to suggestions or wants to discuss how something should be implemented
+- ![#ccc](https://placehold.it/20/ccc/000000?text=+) `support`: Support questions that want to understand how something works, need help debugging their individual problem etc. are closed and tagged with this label.
 
 #### Plugin repositories
 
 For plugin repositories it makes sense to categorize Issues - e.g. a bug report or feature request - or Pull Requests by its platform:
 
-- <div style="background-color:#c5def5; padding:3px 8px; border-radius: 3px; display:inline;">platform: ios</div>
-- <div style="background-color:#c2e0c6; padding:3px 8px; border-radius: 3px; display:inline;">platform: android</div>
-- <div style="background-color:#fef2c0; padding:3px 8px; border-radius: 3px; display:inline;">platform: browser</div>
-- <div style="background-color:#d4c5f9; padding:3px 8px; border-radius: 3px; display:inline;">platform: windows</div>
+- ![#c5def5](https://placehold.it/20/c5def5/000000?text=+) `platform: ios`
+- ![#c2e0c6](https://placehold.it/20/c2e0c6/000000?text=+) `platform: android`
+- ![#fef2c0](https://placehold.it/20/fef2c0/000000?text=+) `platform: browser`
+- ![#d4c5f9](https://placehold.it/20/d4c5f9/000000?text=+) `platform: windows`
 
 <!--
 ### Possible future labels

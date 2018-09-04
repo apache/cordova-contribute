@@ -87,7 +87,7 @@ P0: critical
 
 -->
 
-## Distribute GitHub Templates to all repositories
+## Distribute GitHub Labels to multiple repositories
 
 TODO
 <!--

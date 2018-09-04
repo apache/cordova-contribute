@@ -12,7 +12,7 @@ The following defines the label names, label description and label color in use:
 
 The [default labels](https://help.github.com/articles/about-labels/#using-default-labels) created with new repositories offer a good baseline:
 
-- <div style="background-color:#d73a4a; padding:3px 8px; border-radius: 3px; display:inline;">bug</div>: Something isn't working
+- <div color="#d73a4a" style="background-color:#d73a4a; padding:3px 8px; border-radius: 3px; display:inline;">bug</div>: Something isn't working
 - <div style="background-color:#cfd3d7; padding:3px 8px; border-radius: 3px; display:inline;">duplicate</div>: This issue or pull request already exists
 - <div style="background-color:#a2eeef; padding:3px 8px; border-radius: 3px; display:inline;">enhancement</div>: ~~New feature or request~~ Changes to existing code
 - <div style="background-color:#7057ff; padding:3px 8px; border-radius: 3px; display:inline;">good first issue</div>: Good for newcomers

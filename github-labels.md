@@ -12,14 +12,14 @@ The following defines the label names, label description and label color in use:
 
 The [default labels](https://help.github.com/articles/about-labels/#using-default-labels) created with new repositories offer a good baseline:
 
-- <span style="background-color:#d73a4a; padding:3px; border-radius: 3px;">`bug`</span>: Something isn't working
-- <span style="background-color:#cfd3d7; padding:3px; border-radius: 3px;">`duplicate`</span>: This issue or pull request already exists
-- <span style="background-color:#a2eeef; padding:3px; border-radius: 3px;">`enhancement`</span>: ~~New feature or request~~ Changes to existing code
-- <span style="background-color:#7057ff; padding:3px; border-radius: 3px;">`good first issue`</span>: Good for newcomers
-- <span style="background-color:#008672; padding:3px; border-radius: 3px;">`help wanted`</span>: Extra attention is needed
-- <span style="background-color:#e4e669; padding:3px; border-radius: 3px;">`invalid`</span>: This doesn't seem right
-- <span style="background-color:#d876e3; padding:3px; border-radius: 3px;">`question`</span>: Further information is requested
-- <span style="background-color:#ffffff; padding:3px; border-radius: 3px;">`wontfix`</span>: This will not be worked on
+- <div style="background-color:#d73a4a; padding:3px 8px; border-radius: 3px; display:inline;">bug</div>: Something isn't working
+- <div style="background-color:#cfd3d7; padding:3px 8px; border-radius: 3px; display:inline;">duplicate</div>: This issue or pull request already exists
+- <div style="background-color:#a2eeef; padding:3px 8px; border-radius: 3px; display:inline;">enhancement</div>: ~~New feature or request~~ Changes to existing code
+- <div style="background-color:#7057ff; padding:3px 8px; border-radius: 3px; display:inline;">good first issue</div>: Good for newcomers
+- <div style="background-color:#008672; padding:3px 8px; border-radius: 3px; display:inline;">help wanted</div>: Extra attention is needed
+- <div style="background-color:#e4e669; padding:3px 8px; border-radius: 3px; display:inline;">invalid</div>: This doesn't seem right
+- <div style="background-color:#d876e3; padding:3px 8px; border-radius: 3px; display:inline;">question</div>: Further information is requested
+- <div style="background-color:#ffffff; padding:3px 8px; border-radius: 3px; display:inline;">wontfix</div>: This will not be worked on
 
 The label names `good first issue` and `help wanted` have [special meaning](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/) on GitHub.
 
@@ -29,18 +29,18 @@ The list above has some ~~strike through~~ text. These are our changes to the de
 
 ### Custom labels
 
-- <span style="background-color:#0e8a16; padding:3px; border-radius: 3px;">`feature`</span>: New functionality that requires new code
-- <span style="background-color:#1d76db; padding:3px; border-radius: 3px;">`discussion`</span>: Creator is open to suggestions or wants to discuss how something should be implemented
-- <span style="background-color:#ccc; padding:3px; border-radius: 3px;">`support`</span>: Support questions that want to understand how something works, need help debugging their individual problem etc. are closed and tagged with this label.
+- <div style="background-color:#0e8a16; padding:3px 8px; border-radius: 3px; display:inline;">feature</div>: New functionality that requires new code
+- <div style="background-color:#1d76db; padding:3px 8px; border-radius: 3px; display:inline;">discussion</div>: Creator is open to suggestions or wants to discuss how something should be implemented
+- <div style="background-color:#ccc; padding:3px 8px; border-radius: 3px; display:inline;">support</div>: Support questions that want to understand how something works, need help debugging their individual problem etc. are closed and tagged with this label.
 
 #### Plugin repositories
 
 For plugin repositories it makes sense to categorize Issues - e.g. a bug report or feature request - or Pull Requests by its platform:
 
-- <span style="background-color:#c5def5; padding:3px; border-radius: 3px;">`platform: ios`</span>
-- <span style="background-color:#c2e0c6; padding:3px; border-radius: 3px;">`platform: android`</span>
-- <span style="background-color:#fef2c0; padding:3px; border-radius: 3px;">`platform: browser`</span>
-- <span style="background-color:#d4c5f9; padding:3px; border-radius: 3px;">`platform: windows`</span>
+- <div style="background-color:#c5def5; padding:3px 8px; border-radius: 3px; display:inline;">platform: ios</div>
+- <div style="background-color:#c2e0c6; padding:3px 8px; border-radius: 3px; display:inline;">platform: android</div>
+- <div style="background-color:#fef2c0; padding:3px 8px; border-radius: 3px; display:inline;">platform: browser</div>
+- <div style="background-color:#d4c5f9; padding:3px 8px; border-radius: 3px; display:inline;">platform: windows</div>
 
 <!--
 ### Possible future labels

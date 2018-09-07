@@ -12,11 +12,11 @@ The user then can run commands like `cordova -v` in their command line, which ex
 
 When installing `cordova-cli`, the user also installed two other Cordova libraries via the [dependencies in `package.json`](https://github.com/apache/cordova-cli/blob/master/package.json) (next to several other, external libraries) : `cordova-common` and `cordova-lib`.
 
-`cordova-cli` itself is a pretty thin layer of code that handles parsing and redirecting the commands the CLI can execute over to `cordova-lib`. Besides, it handles outputting the `help` commands and prompting for permission and sending telemetry data. From `cordova-common` is uses mainly the logger and some error handling.
+`cordova-cli` itself is a pretty thin layer of code that handles parsing and redirecting the commands the CLI can execute over to `cordova-lib`. Besides, it handles outputting the `help` commands and prompting for permission and sending telemetry data. From `cordova-common` it uses mainly the logger and some error handling.
 
 ### cordova-common
 
-[cordova-common](https://github.com/apache/cordova-common) contains what it says with its name: Common functionality that is used by other Cordova libraries like `cordova-cli` or `cordova-lib` and others. It has [no further Cordova library dependencies](https://github.com/apache/cordova-common/blob/master/package.json).
+[cordova-common](https://github.com/apache/cordova-common) contains what it says in its name: Common functionality that is used by Cordova packages like `cordova-cli` or `cordova-lib` and others. It has [no further Cordova library dependencies](https://github.com/apache/cordova-common/blob/master/package.json).
 
 ### cordova-lib
 

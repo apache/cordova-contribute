@@ -21,9 +21,9 @@ For archiving:
 
 1. Make sure there are no more open Issues and Pull Requests for this repository  
    If there are, please close them with this suggested text or similar:
-   > We are archiving this repository following [Apache Cordova's Deprecation Policy](https://cordova.apache.org/deprecation_policy.html). We won't do any more work on this repository therefore all Issues and Pull Requests are closed. Thanks for your issue or pull request.  
+   > We are archiving this repository following [Apache Cordova's Deprecation Policy](https://cordova.apache.org/deprecation_policy.html). We will not continue to work on this repository. Therefore all issues and pull requests are being closed. Thanks for your contribution.
    ```markdown
-   We are archiving this repository following [Apache Cordova's Deprecation Policy](https://cordova.apache.org/deprecation_policy.html). We won't do any more work on this repository therefore all Issues and Pull Requests are closed. Thanks for your issue or pull request.
+   We are archiving this repository following [Apache Cordova's Deprecation Policy](https://cordova.apache.org/deprecation_policy.html). We will not continue to work on this repository. Therefore all issues and pull requests are being closed. Thanks for your contribution.
    ```
 1. Make sure deprecation notice is in `README.md` and contains all information
 1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that a) the repository description is prefixed with `[DEPRECATED]` and b) the repository is archived on GitHub
@@ -33,7 +33,7 @@ For archiving:
 ---
 **Deprecation Notice**
 
-This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is in the future but any more future issues will not be fixed by the Cordova community.
+This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is but any future issues will not be fixed by the Cordova community.
 
 Feel free to fork this repository and improve your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
 
@@ -47,7 +47,7 @@ Feel free to fork this repository and improve your fork. Existing forks are list
 ---
 **Deprecation Notice**
 
-This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is in the future but any more future issues will not be fixed by the Cordova community.
+This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is but any future issues will not be fixed by the Cordova community.
 
 Feel free to fork this repository and improve your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
 

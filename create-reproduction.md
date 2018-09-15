@@ -1,29 +1,29 @@
-# Create a minimal reproduction repository or sample
+# Create a Minimal Reproduction Repository or Sample
 
-When you report an issue or bug for any of the Apache Cordova packages, it is very helpful to create and include and link to a reproduction repository or sample.
+When reporting an issue or bug, for any of the Apache Cordova packages, it is helpful to create and include a link to a reproduction repository or sample.
 
 ## Why?
 
-After you create your GitHub issue, someone from the Apache Cordova team will look at it and then has to decide if your issue is an actual bug or maybe "just" some problem in your individual code or how you use one of our libraries. 
+When an Apache Cordova team member reviews a GitHub issue, they need to be able to identify if the issue is either a bug, a problem originating from the users' source code, or how the user is using one of our libraries.
 
-They will have to evaluate the described problem and confirm that it exists. They will only be able to do so if you supplied [enough and the correct information in your issue](TODO). This can be very time consuming and cumbersome. Even then it can be tough, because it is almost impossible to include all your environment information and code in an issue.
+For an efficient evaluation, it is imported to supply a detail report with [enough and correct information](TODO). Gathering the information can be cumbersome and even tough as there are many aspects to the working environment and code.
 
-If you create a reproduction repository, the maintainer will have _all_ the same information you have.
+By creating a reproduction repository, a maintainer should have _all_ of the same information.
 
-As a side effect, it also forces you to reproduce the bug outside of your individual project and with a minimal set of libraries and plugins included. Very often this will tell you a lot of additional information about the bug itself, that would be hard to come by in your usual project. 
+The goal of a reproduce repository is to be able to replicate the bug in a minimalist project containing only the necessary libraries and plugins. Often, being able to replicate the bug outside of the usual project will lead to explaining more information.
 
-Maybe you even figure out it is not an actual bug at all, but an unrelated problem that only manifests in your project because of other reason.
+By creating the minimalist project to reproduce the issue, it may be possible to discover that it's not a bug, but something unrelated and only manifests in the main project for other reasons.
 
 ## How?
 
-1. Execute the command `cordova create` to create a new project locally
-1. Create a public Git repository on e.g. GitHub or Bitbucket and initialize a repository with that remote in your newly created Cordova project
-1. Commit that clean and empty project to your Git repository
-1. Then add the platforms and/or plugins needed to reproduce the problem
-1. Commit the changes in the project again and include the exact commands you executed in the commit message
-1. Then change the code of the sample project so it triggers your problem
-1. Finally commit the reproduction code for your bug to Git and post the repository to your issue
+1. Execute the command `cordova create` to create a new project locally.
+1. Initialize Git on the new Cordova project and set the remote repository to a public repository from any public accessible Git service provider. Example: GitHub, Bitbucket, GitLab, etc
+1. Commit the clean and empty project to the public remote Git repository.
+1. Add the platform(s) and/or plugin(s) needed to reproduce the problem.
+1. Commit the changes in the project again and include the exact commands executed in the commit message.
+1. Change the code, of the sample project in which trigger the problem.
+1. Commit the reproduction code for the bug to Git and post the repository to the issue ticket.
 
-The Cordova maintainer then can check out your Git repository, and just run the commands you described to actually see and experience the bug.
+A Cordova maintainer will then be able to check out the Git repository and follow the step commands, as described, to reproduce and experience the bug.
 
-The repository later can also be a "test" to confirm the problem is actually resolved in an updated version of whatever library is faulty.
+Later, the repository can be used as a "test" to confirm if the problem has been resolved in a future update in regards to the library that was faulty.

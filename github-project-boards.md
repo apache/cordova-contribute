@@ -33,3 +33,9 @@ For Pull Requests we track their "review and merge progress" on project boards:
 #### Labels
 
 [GitHub Labels](github-labels.md) for platform (`platform: ios`, `platform: android`) and type (`bug`, `feature`, `enhancement`) are used to categorize pull requests.
+
+#### Notes
+
+"Note cards" (in contrast to issue or pull request cards) are used to highlight quirks of a board (e.g. that there are multipple plugin PR boards because of the 5 associated repositories limit by GitHub) and the "automation type" for reach column (human, automation, both).
+
+

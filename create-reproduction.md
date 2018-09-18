@@ -4,7 +4,7 @@ When reporting an issue or bug for any of the Apache Cordova packages, it is hel
 
 ## Why
 
-When an Apache Cordova team member reviews a GitHub issue, they need to be able to identify if the issue a bug, a problem originating from the users' source code, or how the user is using one of the Cordova's libraries.
+When an Apache Cordova team member reviews a GitHub issue, they need to be able to identify if the issue is a bug, a problem originating from the users' source code, or how the user is using one of the Cordova's libraries.
 
 For an efficient evaluation, supplying a detailed report with [enough and correct information](TODO) is necessary. 
 
@@ -30,37 +30,36 @@ The steps below show how to create a reproduction repository, on GitHub. This re
 
 ### Step 2: Uploading the Clean Project
 In the terminal, execute the following commands:
+
 ```
-$ cordova create sample-project
-$ cd sample-project
+$ cordova create reproduction-sample
+$ cd reproduction-sample
 $ git init
 $ git add .
 $ git commit -m "Initialize with Clean Project"
+$ git remote add origin git@github.com:<ACCOUNT>/<REPO_NAME>.git
+$ git push -u origin master
 ```
 
 ### Step 3: Adding Necessary Dependencies
-1. Add the necessary platform(s) and/or plugin(s) needed to reproduce the problem.
+Add and commit on each necessary platform(s) and/or plugin(s) needed to reproduce the problem.
 
-    **Example:**
-    ```
-    $ cordova platform add android
-    $ cordova plugin add cordova-plugin-inappbrowser
-    ```
-
-1. Commit and push the changes to the reproduction repository with a commit message that includes the exact commands in the order of execution.
-
-    **Example:**
-    ```
-    $ git commit -m "Step-by-Step Command Execution:
-    - cordova platform add android
-    - cordova plugin add cordova-plugin-inappbrowser
-    "
-    $ git push origin master
-    ```
+**Example:**
+```
+$ cordova platform add android
+$ git add .
+$ git commit -m "cordova platform add android"
+$ cordova plugin add cordova-plugin-inappbrowser
+$ git add .
+$ git commit -m "cordova plugin add cordova-plugin-inappbrowser"
+$ git push origin master
+```
 
 ### Step 4: Reproducing the Issue
 1. Update the project source code to reproduce and trigger the problem.
 1. Commit and push the issue reproduction code
+
+    **Example:**
     ```
     $ git commit -m "Issue Reproduction Code"
     $ git push origin master

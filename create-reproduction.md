@@ -4,11 +4,11 @@ When reporting an issue or bug for any of the Apache Cordova packages, it is hel
 
 ## Why
 
-When an Apache Cordova team member reviews a GitHub issue, they need to be able to identify if the issue is a bug, a problem originating from the users' source code, or how the user is using one of the Cordova's libraries.
+When an Apache Cordova team member reviews a GitHub issue, they need to be able to identify if the issue is a bug, a problem originating from the users' source code, or from how the user is using one of Cordova's libraries.
 
 For an efficient evaluation, supplying a detailed report with [enough and correct information](TODO) is necessary. 
 
-As a Cordova Maintainer, it can be cumbersome and even tough to reproduce an issue when there are many aspects to the working environment and users' source code.
+As a Cordova Maintainer, it can be cumbersome and even tough to reproduce an issue as there are many aspects to the working environment and users' source code.
 
 By creating a reproduction repository, a maintainer should have _all_ of the same information.
 
@@ -21,7 +21,7 @@ When creating the minimal project, it may be possible to discover that it is not
 The steps below show how to create a reproduction repository, on GitHub. This repository is for Apache Cordova maintainers for reproducing, evaluating, and debugging the associated issue ticket. Any public accessible git remote service is acceptable. For example GitHub, BitBucket, GitLab, etc.
 
 ### Step 1: Creating a Blank GitHub Repository
-1. Go to (Create a new repository)[https://github.com/new] on GitHub.
+1. Go to [Create a new repository](https://github.com/new) on GitHub.
 1. Insert a `Repository name`
 1. Select `Public` to make the repository public accessible
 1. Click `Create repository`
@@ -68,4 +68,4 @@ $ git push origin master
 ### Step 5: Creating and Submitting the Issue Ticket
 In the GitHub issue ticket, supply the link to the public repository.
 
-Later, the repository can be used as a "test" to confirm if the problem has been resolved in a future update in regards to the library that was faulty.
+Later, the repository can be used to test if the problem has been resolved in a future update in regards to the library that was faulty.

@@ -9,3 +9,4 @@ This repository contains documents describing everything a contributor of Apache
 ### Process
 
 - [GitHub Templates](github-templates.md)
+- [GitHub Labels](github-labels.md)

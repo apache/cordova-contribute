@@ -7,3 +7,7 @@ This repository contains documents describing everything a contributor of Apache
 ## Topics
 
 - [GitHub Project Boards](github-project-boards.md)
+
+### Process
+
+- [GitHub Labels](github-labels.md)

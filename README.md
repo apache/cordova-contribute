@@ -7,3 +7,7 @@ This repository contains documents describing everything a contributor of Apache
 ## Topics
 
 [Create a minimal reproduction repository](create-reproduction.md)
+
+### Process
+
+- [GitHub Labels](github-labels.md)

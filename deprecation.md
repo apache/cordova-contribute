@@ -4,6 +4,11 @@
 
 ## Deprecating or Archiving a Repository
 
+
+### 1. Vote TODO
+
+TODO
+
 ### 1. Make changes in `README.md`
 
 Add the [Deprecation Notice Template](#deprecation-notice-template) to the `README.md` of the project. Add a reason and a link to further information (e.g. blog post, web standard definition etc.).

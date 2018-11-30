@@ -17,7 +17,7 @@ Document the deprecation of the component in [`cordova-deprecated`](https://gith
 
 ### 3. Make changes in `README.md`
 
-Add the [Deprecation Notice Template](#deprecation-notice-template) to the `README.md` of the project. Make sure the template is adapted to the specific component as described.
+Add the [Deprecation Notice Template](#deprecation-notice) to the `README.md` of the project. Make sure the template is adapted to the specific component as described.
 
 ### 4. Archiving only: Close Issues and Pull Requests
 
@@ -30,17 +30,19 @@ A PMC member has to [open an issue with Apache INFRA](https://issues.apache.org/
 For deprecation:
 
 1. Make sure the deprecation notice is in `README.md` and contains all information.
-1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that the repository description is prefixed with `[DEPRECATED]`.
+1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that the repository description is prefixed with `[DEPRECATED] `.
 
 For archiving:
 
 1. Make sure the deprecation notice is in `README.md` and contains all information.
 1. Make sure there are no more open Issues and Pull Requests for this repository.
-1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that a) the repository description is prefixed with `[DEPRECATED]` and b) the repository is archived on GitHub.
+1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that   
+  a) the repository description is prefixed with `[DEPRECATED] ` and   
+  b) the repository is archived on GitHub.
 
 ### 6. Announce
 
-Announce the successful execution of all deprecation and/or archiving actions to your fellow Apache Cordova PMC members and developers on the appropriate mailing list. Thanks!
+Announce the successful execution of all deprecation and/or archiving actions to your fellow Apache Cordova PMC members and developers on the [appropriate mailing list](https://cordova.apache.org/contact/). Thanks!
 
 
 ## Templates
@@ -50,7 +52,7 @@ Announce the successful execution of all deprecation and/or archiving actions to
 This template is to be used in the `README.md` of depreacted components. The "Learn more" link should be customized to link to the corresponding headline in [`cordova-deprecated`](https://github.com/apache/cordova-deprecated) (replace `xyz` with the correct link anchor).
 
 ---
-**Deprecation Notice**
+📌 **Deprecation Notice**
 
 This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is but any future issues will not be fixed by the Cordova community.
 
@@ -63,7 +65,7 @@ Feel free to fork this repository and improve your fork. Existing forks are list
 
 ```markdown
 ---
-**Deprecation Notice**
+📌 **Deprecation Notice**
 
 This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is but any future issues will not be fixed by the Cordova community.
 

@@ -11,9 +11,9 @@ Similar to other important decisions, Apache Cordova uses a [voting process](htt
 
 Only proceed if the vote succeeds.
 
-### 2. Document deprecation in [`cordova-deprecated`](https://github.com/apache/cordova-deprecated)
+### 2. Document deprecation in [`deprecated.md` of `apache/cordova`](https://github.com/apache/cordova/blob/master/deprecated.md)
 
-Document the deprecation of the component in [`cordova-deprecated`](https://github.com/apache/cordova-deprecated) by editing the `README.md`. You can include information as the the reason for deprecation, a link to the deprecation announcement, links to vital forks, alternatives etc.
+Document the deprecation of the component in [`deprecated.md` of `apache/cordova`](https://github.com/apache/cordova/blob/master/deprecated.md). You can include information as the the reason for deprecation, a link to the deprecation announcement, links to vital forks, alternatives etc.
 
 ### 3. Make changes in `README.md`
 
@@ -49,7 +49,7 @@ Announce the successful execution of all deprecation and/or archiving actions to
 
 ### Deprecation Notice
 
-This template is to be used in the `README.md` of depreacted components. The "Learn more" link should be customized to link to the corresponding headline in [`cordova-deprecated`](https://github.com/apache/cordova-deprecated) (replace `xyz` with the correct link anchor).
+This template is to be used in the `README.md` of depreacted components. The "Learn more" link should be customized to link to the corresponding headline in [`deprecated.md` of `apache/cordova`](https://github.com/apache/cordova/blob/master/deprecated.md) (replace `xyz` with the correct link anchor).
 
 ---
 📌 **Deprecation Notice**
@@ -58,7 +58,7 @@ This repository is deprecated and no more work will be done on this by Apache Co
 
 Feel free to fork this repository and improve your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
 
-- Learn more: https://github.com/apache/cordova-deprecated#xyz
+- Learn more: https://github.com/apache/cordova/blob/master/deprecated.md#xyz
 ---
 
 #### Markdown
@@ -71,7 +71,7 @@ This repository is deprecated and no more work will be done on this by Apache Co
 
 Feel free to fork this repository and improve your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
 
-- Learn more: https://github.com/apache/cordova-deprecated#xyz
+- Learn more: https://github.com/apache/cordova/blob/master/deprecated.md#xyz
 ---
 ```
 

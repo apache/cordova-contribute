@@ -8,4 +8,5 @@ This repository contains documents describing everything a contributor of Apache
 
 ### Process
 
+- [Deprecation and Archiving of Repositories](deprecation.md)
 - [GitHub Labels](github-labels.md)

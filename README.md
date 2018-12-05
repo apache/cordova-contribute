@@ -6,7 +6,10 @@ This repository contains documents describing everything a contributor of Apache
 
 ## Topics
 
+- [GitHub Project Boards](github-project-boards.md)
+
 ### Process
 
-- [GitHub Templates](github-templates.md)
+- [Deprecation and Archiving of Repositories](deprecation.md)
 - [GitHub Labels](github-labels.md)
+- [GitHub Templates](github-templates.md)

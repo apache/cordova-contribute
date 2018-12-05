@@ -6,8 +6,11 @@ This repository contains documents describing everything a contributor of Apache
 
 ## Topics
 
-[Create a minimal reproduction repository](create-reproduction.md)
+- [Create a minimal reproduction repository](create-reproduction.md)
+- [Deprecation and Archiving of Repositories](deprecation.md)
 
 ### Process
 
+- [GitHub Project Boards](github-project-boards.md)
 - [GitHub Labels](github-labels.md)
+- [GitHub Templates](github-templates.md)

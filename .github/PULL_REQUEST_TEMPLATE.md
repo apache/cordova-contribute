@@ -25,5 +25,5 @@ Thanks!
 - [ ] I've run the tests to see all new and existing tests pass
 - [ ] I added automated test coverage as appropriate for this change.
 - [ ] Commit is prefixed with `(platform)` if this change only applies to one platform (e.g. `(android)`)
-- [ ] If this Pull Request resolves an issue, I linked to the issue in the text above
+- [ ] If this Pull Request resolves an issue, I linked to the issue in the text above (and used the correct [keyword to close issues using keywords](https://help.github.com/articles/closing-issues-using-keywords/))
 - [ ] I've updated the documentation if necessary.

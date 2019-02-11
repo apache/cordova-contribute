@@ -4,30 +4,30 @@ The aim of Cordova's developer team is to produce great and working software. To
 
 ## Table of Contents
 
-- [What is the current state of the tests?](#what-is-the-current-state-of-the-tests-)
-- [What types of tests does Cordova use?](#what-types-of-tests-does-cordova-use-)
+- [What is the current state of the tests?](#what-is-the-current-state-of-the-tests)
+- [What types of tests does Cordova use?](#what-types-of-tests-does-cordova-use)
   * [Manual Tests](#manual-tests)
   * [Automated Tests](#automated-tests)
     + [Syntax Checker](#syntax-checker)
     + [Unit Tests](#unit-tests)
       - [Code Coverage](#code-coverage)
     + [Component Tests](#component-tests)
-    + [Integration / End to End Tests](#integration---end-to-end-tests)
+    + [Integration / End to End Tests](#integration--end-to-end-tests)
       - [Appium](#appium-interface-tests)
-- [How to implement tests?](#how-to-implement-tests-)
+- [How to implement tests?](#how-to-implement-tests)
   * [Tooling](#tooling)
   * [Platforms](#platforms)
     + [Native Unit Tests](#native-unit-tests)
   * [Plugins](#plugins)
-    + [Plugin tests with `cordova-plugin-test-framework`](#plugin-tests-with--cordova-plugin-test-framework-)
+    + [Plugin tests with `cordova-plugin-test-framework`](#plugin-tests-with-cordova-plugin-test-framework)
     + [Appium Tests](#appium-tests)
-    + [Paramedic: `cordova-paramedic`](#paramedic---cordova-paramedic-)
+    + [Paramedic: `cordova-paramedic`](#paramedic-cordova-paramedic)
       - [Sauce Labs](#sauce-labs)
     + [Core Plugins](#core-plugins)
     + [3rd party plugins](#3rd-party-plugins)
 - [How to run tests?](#how-to-run-tests-)
   * [Local](#local)
-    + [Special case: Plugins](#special-case--plugins)
+    + [Special case: Plugins](#special-case-plugins)
   * [Continuous Integration](#continuous-integration)
 
 <!--<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>-->
@@ -160,11 +160,11 @@ As all Cordova projects are set up as JavaScript projects, the available test co
     "test": "run-s eslint unit-tests java-unit-tests e2e-tests",
     "eslint": "run-s -c eslint:*",
     "eslint:scripts": "eslint bin spec test",
-    "eslint:bins": "eslint 'bin/**/*' --ignore-pattern '**/*.*' --ignore-pattern '**/gitignore' --ignore-pattern 'bin/templates/cordova/version'"
+    "eslint:bins": "eslint 'bin/**/*' --ignore-pattern '**/*.*' --ignore-pattern '**/gitignore' --ignore-pattern 'bin/templates/cordova/version'",
     "unit-tests": "jasmine --config=spec/unit/jasmine.json",
     "java-unit-tests": "node test/run_java_unit_tests.js",
     "e2e-tests": "jasmine --config=spec/e2e/jasmine.json",
-    "cover": "istanbul cover --root bin --print detail jasmine -- --config=spec/unit/jasmine.json",
+    "cover": "istanbul cover --root bin --print detail jasmine -- --config=spec/unit/jasmine.json"
   },
 ```
 

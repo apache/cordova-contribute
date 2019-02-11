@@ -49,9 +49,28 @@ See [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) for o
 
 ## Distribute GitHub Templates to all repositories
 
-TODO
-<!--
-How can changes to these templates be distributed simply to all our (many) repositories?
-Maybe a shell script that copies to locally checked out repositories, then commits and pushes to all of them?
-cordova-coho maybe already does something like this?
--->
+Distributing these templates manually would take quite some time. For that reason @janpio wrote a small script that takes care of the process:
+
+1. Check out both this repository [`cordova-contribute`](https://github.com/apache/cordova-contribute) and [`cordova-coho`](https://github.com/apache/cordova-coho) in the same folder.
+1. In `cordova-coho` run `npm install` and `npm link`.
+1. Go one level up, create a folder (e.g. `coho Checkouts`) and go into that folder.
+1. Run `coho repo-update -g -r all` to check out "all" Cordova repositories.
+1. Remove the folders of repositories you don't want to distribute the templates to.
+1. Check out any other Apache Cordova repositories that `coho` might have missed.
+1. Create a file `run.rb` with the following content:
+    ```ruby
+    folders = Dir.glob('*').select {|f| File.directory? f}
+    @source = "../cordova-contribute/.github"
+    require 'fileutils'
+    folders.each do |folder| 
+        FileUtils.copy_entry @source, "#{folder}/.github"
+        Dir.chdir(folder)
+        `git add .github`
+        `git commit -m "Add or update GitHub pull request and issue template"`
+        `git push origin`
+        Dir.chdir("..")
+    end
+    ```
+    This gets all folders, iterates through them and copies the templates from `../cordova-contribute/.github` to `.github` in each folder, then adds the new files via git and commits and pushes the changes.
+1. Execute the script with `ruby run.rb` and wait until it is finished.
+1. Manually confirm that everything went well.

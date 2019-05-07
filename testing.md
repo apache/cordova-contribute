@@ -13,12 +13,13 @@ The aim of Cordova's developer team is to produce great and working software. To
       - [Code Coverage](#code-coverage)
     + [Component Tests](#component-tests)
     + [Integration / End to End Tests](#integration--end-to-end-tests)
-      - [Appium](#appium-interface-tests)
+      - [Appium Interface Tests](#appium-interface-tests)
 - [How to implement tests?](#how-to-implement-tests)
   * [Tooling](#tooling)
   * [Platforms](#platforms)
     + [Native Unit Tests](#native-unit-tests)
   * [Plugins](#plugins)
+    + [Native](#native)
     + [Plugin tests with `cordova-plugin-test-framework`](#plugin-tests-with-cordova-plugin-test-framework)
     + [Appium Tests](#appium-tests)
     + [Paramedic: `cordova-paramedic`](#paramedic-cordova-paramedic)
@@ -106,9 +107,12 @@ Plugin tests are somewhat special, as they are set up in a different way. `npm r
 
 #### Native
 
-https://github.com/apache/cordova-plugin-camera/tree/master/tests/ios
-https://github.com/apache/cordova-plugin-splashscreen/tree/master/tests/ios
-https://github.com/apache/cordova-plugin-wkwebview-engine/tree/master/tests/ios
+TODO
+
+Examples:
+- https://github.com/apache/cordova-plugin-camera/tree/master/tests/ios
+- https://github.com/apache/cordova-plugin-splashscreen/tree/master/tests/ios
+- https://github.com/apache/cordova-plugin-wkwebview-engine/tree/master/tests/ios
 
 #### Plugin tests with `cordova-plugin-test-framework`
 

@@ -122,8 +122,12 @@ Additionally, the `/tests` folder contains its own `package.json` and `config.xm
 
 #### Appium Tests
 
-A small number of plugins also implements End to End Tests with Appium. They live in `/appium-tests`.
-TODO Native code is being execised vs. JS part with all the other test types
+A small number of plugins also implements End to End Tests with Appium. They live in `/appium-tests`:
+
+- https://github.com/apache/cordova-plugin-camera/tree/master/appium-tests
+- https://github.com/apache/cordova-plugin-contacts/tree/master/appium-tests (deprecated)
+
+TODO Explain: Native code is being execised vs. JS part with all the other test types
 
 #### Paramedic: `cordova-paramedic`
 

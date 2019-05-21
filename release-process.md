@@ -2,29 +2,34 @@
 
 - Supported by automation via `cordova-coho` CLI tool
 
-
 ## Release Process Overview
 
-- Decide on release type: major, minor, patch
+- Decide on release type:   
+  a) major/minor  
+  b) patch
 - Switch to correct branch:   
-  a) minor/major: `master`  
-  b) patch: release branch
-- If major (and not bumped manually before): Bump major
+  - If minor/major: `master`  
+  - If patch: existing release branch
 - Make sure branch is good to release
-  - Code Maintenance
-  - Test
+  - If patch: Cherry pick fixes from `master` or add on release branch
+  - [Code Maintenance](TODO)
+  - [Test](TODO)
 - Release
+  - If major (and not bumped manually before): Bump major
   - Create and curate Release Notes
   - If minor/major: Create new release branch
   - Remove `-dev` suffix
   - Tag on release branch
-    - Publish to dist/dev
-  - Bump minor + add `-dev` back
-  - If patch: Cherry pick useful changes back to `master`
+  - Publish: Upload to `dist/dev`
+  - If major/minor: Bump minor + add `-dev` back on `master`
+  - If patch: Bump path + add `-dev` back on release branch
+  - If patch: Make sure all changes from release branch are 
 - Vote
 - On success:
-  - Promote from dist/dev to dist
-  - Add rel/ tag
+  - Publish: Promote from `dist/dev` to `dist`
+  - Add `rel/` tag
+  - Publish: Upload to npm
+  - If patch: Cherry pick release notes commit from release branch to `master`
   
 ## Detailed Release Process Documentation
 

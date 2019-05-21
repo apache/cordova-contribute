@@ -1,10 +1,7 @@
 # Release Process Documentation
 
-
-
 - Supported by automation via `cordova-coho` CLI tool
 
----
 
 ## Release Process Overview
 
@@ -29,9 +26,9 @@
   - Promote from dist/dev to dist
   - Add rel/ tag
   
-  ## Detailed Release Process Documentation
-  
-  - Tooling
-  - Platforms
-  - Plugins
-  - Other
+## Detailed Release Process Documentation
+
+- Tooling
+- Platforms
+- Plugins
+- Other

@@ -21,9 +21,8 @@
   - Remove `-dev` suffix
   - Tag on release branch
   - Publish: Upload to `dist/dev`
-  - If major/minor: Bump minor + add `-dev` back on `master`
-  - If patch: Bump path + add `-dev` back on release branch
-  - If patch: Make sure all changes from release branch are 
+  - Bump patch + add `-dev` back on release branch
+  - If major/minor: Bump minor (and make sure `-dev` is present on `master`)
 - Vote
 - On success:
   - Publish: Promote from `dist/dev` to `dist`

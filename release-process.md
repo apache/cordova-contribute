@@ -16,7 +16,7 @@
   - [Test](TODO)
 - Release
   - If major (and not bumped manually before): Bump major
-  - Create and curate Release Notes
+  - Create, curate and commit Release Notes
   - If minor/major: Create new release branch
   - Remove `-dev` suffix
   - Tag on release branch

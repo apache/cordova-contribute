@@ -23,7 +23,7 @@ This document describes how Apache Cordova versions and manages its packages.
   > - MAJOR version when you make incompatible API changes,
   > - MINOR version when you add functionality in a backwards-compatible manner, and
   > - PATCH version when you make backwards-compatible bug fixes.
-- A `-dev` suffix is added to versions in repos to indicate unreleased code (as platforms and plugins can be installed from `master` via CLI). It is temporarily removed during the [release process](#release) and added back with the [version bump](#version-bump) that h
+- A `-dev` suffix is added to versions in repos to indicate unreleased code (as platforms and plugins can be installed from `master` via CLI). It is temporarily removed during the [release process](#release) and added back with the [version bump](#version-bump).
 
 ### Version Bump
 

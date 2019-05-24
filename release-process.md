@@ -22,29 +22,29 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - Remove `-dev` suffix (and _commit_)
   - [Test](testing-releases.md)
   - _Tag_ on release branch
-  - Apache: Create archive and upload to `dist/dev`
+  - Apache: Create archive and upload to [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/)
   - Bump patch + add `-dev` back on release branch (and _commit_)
   - If minor/major: Bump minor (and make sure `-dev` is present) on `master` (and _commit_)
   - _Push_ all changes, release branch and tag
 - Vote
   - Other PMC members [test the release](testing-releases.md) and vote
 - On success:
-  - Apache: Promote from `dist/dev` to `dist`
+  - Apache: Promote from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/) to [`dist/release`](https://dist.apache.org/repos/dist/release/cordova/)
   - Apache: Add `rel/` tag
   - Publish to npm
   - If patch: Cherry pick release notes (and additional) commit from release branch to `master`
   - _Push_ changes and tag
 - On failure:
-  - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch (and _commit_ and _push_)
+  - Remove created tag, delete uploaded archive from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/), unbump patch on release branch (and _commit_ and _push_)
   - Fix problem
   - Restart at "Release"
 
-This list also does not include steps that are only required for one type of component.
+This list also does not include steps that are only required for one type of component:
 
-TODO
-- Platforms: Update `cordova.js` and propagate version number to other platform files
+- Platforms: Update `cordova.js`, propagate version number to other platform files (which those are depends on the platform), tag `master` of `cordova-js` with new platform version, make sure documentation is up to date or create PR that can be merged after release
+- Plugins: Make sure `README.md` is correct
 
-But they are included below.
+The detailed documentation below does include these at the appropriate locations.
 
 ## Detailed Release Process Documentation
 

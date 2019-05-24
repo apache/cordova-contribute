@@ -11,6 +11,7 @@ This repository contains documents describing everything a contributor of Apache
 - [Versions, Branches and Releases](versions-branches-releases.md)
   - [Creating a Release](release-process.md)
 - [Testing Cordova](testing.md)
+- [Code Maintenance](code-maintenance.md)
 
 ### Process
 

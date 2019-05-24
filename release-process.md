@@ -15,7 +15,7 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - [Code Maintenance](code-maintenance.md)
   - [Test](testing-releases.md)
   - If major (and not bumped manually with breaking commit before): Bump major
-  - Create, curate and commit Release Notes
+  - Create, curate and commit Release Notes into `RELEASENOTES.md`
 - Release
   - If minor/major: Create new release branch
   - Remove `-dev` suffix

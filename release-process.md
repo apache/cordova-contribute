@@ -2,6 +2,8 @@
 
 ## Release Process Overview
 
+This describes the _technical_, theoretical steps of a release. (For all the _organizational_ steps and actual commands to execute, please refer to the [Detailed Release Process Documentation](#detailed-release-process-documentation) below.)
+
 - Decide on release type:   
   a) major/minor  
   b) patch
@@ -10,9 +12,9 @@
   - If patch: existing release branch
 - Prepare Release (Make sure branch is good to release)
   - If patch: Cherry pick fixes from `master` (or create on release branch directly)
-  - [Code Maintenance](TODO)
-  - [Test](TODO)
-  - If major (and not bumped manually before): Bump major
+  - [Code Maintenance](code-maintenance.md)
+  - [Test](testing-releases.md)
+  - If major (and not bumped manually with breaking commit before): Bump major
   - Create, curate and commit Release Notes
 - Release
   - If minor/major: Create new release branch

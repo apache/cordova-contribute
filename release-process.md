@@ -11,7 +11,7 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - If minor/major: `master`  
   - If patch: existing release branch
 - Prepare Release (Make sure branch is good to release)
-  - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly)
+  - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly or via PR and _commit_)
   - [Code Maintenance](code-maintenance.md)
   - [Test](testing-releases.md)
   - If major (and not bumped manually with breaking commit before): Bump major and _commit_
@@ -33,7 +33,7 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - If patch: Cherry pick release notes (and additional) commit from release branch to `master`
   - _Push_ changes and tag
 - On failure:
-  - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch  (and _commit_ and _push_)
+  - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch (and _commit_ and _push_)
   - Fix problem
   - Restart at "Release"
   

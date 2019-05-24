@@ -43,7 +43,7 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
 
 This list also does not include steps that are only required for one type of component:
 
-- Platforms: Update `cordova.js`, propagate version number to other platform files (which those are depends on the platform), tag `master` of `cordova-js` with new platform version, make sure documentation is up to date or create PR that can be merged after release
+- Platforms: Update `cordova.js`, propagate version number to other platform files (which those are depends on the platform), tag `master` of `cordova-js` with new platform version, make sure documentation is up to date or create PR that can be merged after release, Android only: Publish to Bintray
 - Plugins: Make sure `README.md` is correct
 
 The detailed documentation below does include these at the appropriate locations.

@@ -36,7 +36,9 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch (and _commit_ and _push_)
   - Fix problem
   - Restart at "Release"
-  
+
+This also does not include steps that are only required for one type of packages (e.g. platform, or tooling). These are also only included below:
+
 ## Detailed Release Process Documentation
 
 This generalized release process is supported and partly automated by our `cordova-coho` CLI tool. As details of this process are different depending on what kind of package you want to release, we have individual detailed release process documentation that contains the actual commands to run:

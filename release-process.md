@@ -37,7 +37,12 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - Fix problem
   - Restart at "Release"
 
-This also does not include steps that are only required for one type of packages (e.g. platform, or tooling). These are also only included below:
+This list also does not include steps that are only required for one type of component.
+
+TODO
+- Platforms: Update `cordova.js` and propagate version number to other platform files
+
+But they are included below.
 
 ## Detailed Release Process Documentation
 

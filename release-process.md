@@ -5,12 +5,12 @@
 This describes the _technical_, theoretical steps of a release. (For all the _organizational_ steps and actual commands to execute, please refer to the [Detailed Release Process Documentation](#detailed-release-process-documentation) below.)
 
 - Decide on release type:   
-  a) major/minor  
+  a) minor/major
   b) patch
 - Checkout correct branch:   
   - If minor/major: `master`  
   - If patch: existing release branch
-- Prepare Release (Make sure branch is good to release)
+- Prepare Release
   - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly or via PR and _commit_)
   - [Code Maintenance](code-maintenance.md)
   - [Test](testing-releases.md)
@@ -31,11 +31,13 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
 - On success:
   - Apache: Promote from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/) to [`dist/release`](https://dist.apache.org/repos/dist/release/cordova/)
   - Apache: Add `rel/` tag
-  - Publish to npm
+  - Publish archive (!) to npm
   - If patch: Cherry pick release notes (and additional) commit from release branch to `master`
   - _Push_ changes and tag
 - On failure:
-  - Remove created tag, delete uploaded archive from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/), unbump patch on release branch (and _commit_ and _push_)
+  - Remove created tag (and _push_), delete uploaded archive from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/), unbump patch on release branch (and _commit_ and _push_)
+    - TODO ALTERNATIVE: remove tag, delete archive, start from beginning with now a patch release
+    - TODO ALTERNATIVE: https://github.com/apache/cordova-coho/blob/master/docs/platforms-release-process.md#if-the-vote-does-not-pass
   - Fix problem
   - Restart at "Release"
 

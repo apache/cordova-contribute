@@ -7,22 +7,23 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
 - Decide on release type:   
   a) major/minor  
   b) patch
-- Switch to correct branch:   
+- Checkout correct branch:   
   - If minor/major: `master`  
   - If patch: existing release branch
 - Prepare Release (Make sure branch is good to release)
-  - If patch: Cherry pick fixes from `master` (or create on release branch directly)
+  - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly)
   - [Code Maintenance](code-maintenance.md)
   - [Test](testing-releases.md)
-  - If major (and not bumped manually with breaking commit before): Bump major
-  - Create, curate and commit Release Notes into `RELEASENOTES.md`
+  - If major (and not bumped manually with breaking commit before): Bump major and _commit_
+  - Create, curate Release Notes into `RELEASENOTES.md` and _commit_
 - Release
-  - If minor/major: Create new release branch
-  - Remove `-dev` suffix
-  - Tag on release branch
+  - If minor/major: _Create_ new release branch
+  - Remove `-dev` suffix (and _commit_)
+  - _Tag_ on release branch
   - Apache: Create archive and upload to `dist/dev`
-  - Bump patch + add `-dev` back on release branch
-  - If minor/major: Bump minor (and make sure `-dev` is present) on `master`
+  - Bump patch + add `-dev` back on release branch (and _commit_)
+  - If minor/major: Bump minor (and make sure `-dev` is present) on `master` (and _commit_)
+  - _Push_ all changes and tag
 - Vote
   - Other PMC members [test the release](testing-releases.md) and vote
 - On success:
@@ -30,8 +31,9 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - Apache: Add `rel/` tag
   - Publish to npm
   - If patch: Cherry pick release notes (and additional) commit from release branch to `master`
+  - _Push_ changes and tag
 - On failure:
-  - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch
+  - Remove created tag, delete uploaded archive from `dist/dev`, unbump patch on release branch  (and _commit_ and _push_)
   - Fix problem
   - Restart at "Release"
   

@@ -1,4 +1,4 @@
-# Versioning, Branches and Releases
+# Versions, Branches and Releases
 
 This document describes how Apache Cordova versions and manages its packages.
 

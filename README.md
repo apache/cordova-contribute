@@ -8,14 +8,15 @@ This repository contains documents describing everything a contributor of Apache
 
 ### Developing Apache Cordova
 
-- [Versions, Branches and Releases](versions-branches-releases.md)
-  - [Creating a Release](release-process.md)
 - [Testing Cordova](testing.md)
 - [Code Maintenance](code-maintenance.md)
+- [Creating a Release](release-process.md)
+- [Testing a Release](testing-releases.md)
 
 ### Process
 
 - [Deprecation and Archiving of Repositories](deprecation.md)
+- [Versions, Branches and Releases](versions-branches-releases.md)
 
 #### GitHub
 

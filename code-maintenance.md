@@ -17,6 +17,8 @@ coho audit-license-headers -r android | less
 
 TODO Properly handle this: "Ensure license headers are present everywhere. For reference, see this background. Expect some noise in the output, for example some files from test fixtures will show up."
 
+TODO What to do if not?
+
 ### Dependency Licences
 
 Ensure all dependencies and subdependencies have Apache-compatible licenses:
@@ -24,6 +26,8 @@ Ensure all dependencies and subdependencies have Apache-compatible licenses:
 ```bash
 coho check-license -r android
 ```
+
+TODO What to do if not?
 
 ## Dependencies
 

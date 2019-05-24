@@ -14,16 +14,18 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly or via PR and _commit_)
   - [Code Maintenance](code-maintenance.md)
   - [Test](testing-releases.md)
+    - Fix any regressions and _commit_
   - If major (and not bumped manually with breaking commit before): Bump major and _commit_
   - Create, curate Release Notes into `RELEASENOTES.md` and _commit_
 - Release
   - If minor/major: _Create_ new release branch
   - Remove `-dev` suffix (and _commit_)
+  - [Test](testing-releases.md)
   - _Tag_ on release branch
   - Apache: Create archive and upload to `dist/dev`
   - Bump patch + add `-dev` back on release branch (and _commit_)
   - If minor/major: Bump minor (and make sure `-dev` is present) on `master` (and _commit_)
-  - _Push_ all changes and tag
+  - _Push_ all changes, release branch and tag
 - Vote
   - Other PMC members [test the release](testing-releases.md) and vote
 - On success:

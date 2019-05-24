@@ -1,7 +1,5 @@
 # Release Process Documentation
 
-- Supported by automation via `cordova-coho` CLI tool
-
 ## Release Process Overview
 
 - Decide on release type:   
@@ -37,7 +35,10 @@
   
 ## Detailed Release Process Documentation
 
-- Tooling
-- Platforms
-- Plugins
-- Other
+This generalized release process is supported and partly automated by our `cordova-coho` CLI tool. As details of this process are different depending on what kind of package you want to release, we have individual detailed release process documentation that contains the actual commands to run:
+
+- [Platforms](https://github.com/apache/cordova-coho/blob/master/docs/platforms-release-process.md)
+- [Plugins](https://github.com/apache/cordova-coho/blob/master/docs/plugins-release-process.md)
+- [Tooling](https://github.com/apache/cordova-coho/blob/master/docs/tools-release-process.md)
+- [Hello World App](https://github.com/apache/cordova-coho/blob/master/docs/app-hello-world-release-process.md)
+- [Coho](https://github.com/apache/cordova-coho/blob/master/docs/coho-release-process.md)

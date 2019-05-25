@@ -50,7 +50,7 @@ TODO
 
 The following commands all assume to be run in a folder that includes the platform you are testing, e.g. `cordova-android`. It should also contain a checkout of `cordova-mobile-spec`.
 
-#### Platform + Plugins
+#### Platform + Plugins via Mobilespec
 
 Create and run a [mobile-spec](https://github.com/apache/cordova-mobile-spec/) project:
 
@@ -91,6 +91,14 @@ This should create an app showing a white screen.
 Ensure the generated project files also build through the appropriate platform IDE.
 
 The output from `./cordova/version` should show the correct platform version.
+
+#### cordova-lib
+
+TODO https://github.com/apache/cordova-coho/blob/master/docs/platforms-release-process.md#4-cordova-lib-tests
+
+#### cordova.js
+
+TODO Some kind of tests (maybe via plugins) that test if the cordova.js functionality works as expected
 
 ### Tooling
 

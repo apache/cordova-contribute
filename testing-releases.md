@@ -17,6 +17,25 @@ b) After the release was made and you now want to make sure the archive is good:
 
 ### Plugins
 
+#### Plugin Tests
+
+Create a new app, add the plugin and its tests subplugin:
+
+```bash
+cordova create pluginTestApp
+cd pluginTestApp
+cordova plugin add ../cordova-plugin-vibration
+cordova plugin add ../cordova-plugin-vibration/tests
+cordova plugin add cordova-plugin-test-framework
+sed -i -e 's/index.html/cdvtests\/index.html/g' config.xml
+cordova platform add android
+cordova run android
+```
+
+This should start a grey-ish app with "Auto Tests" and "Manual Tests" buttons. You should run both and see if all/most/the expected ones succeed.
+
+#### Plugin Tests via Mobilespec
+
 Assumes plugin is checkout out next to `cordova-mobile-spec`:
 
 ```bash

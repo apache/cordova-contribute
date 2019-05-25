@@ -4,6 +4,8 @@
 
 This describes the _technical_, theoretical steps of a release. (For all the _organizational_ steps and actual commands to execute, please refer to the [Detailed Release Process Documentation](#detailed-release-process-documentation) below.)
 
+TODO maybe rewrite release-from-master focused with fallback "needs release branch" instead of release-from-branch focused.
+
 - Decide on release type:   
   a) minor/major
   b) patch
@@ -45,6 +47,7 @@ This list also does not include steps that are only required for one type of com
 
 - Platforms: Update `cordova.js`, propagate version number to other platform files (which those are depends on the platform), tag `master` of `cordova-js` with new platform version, make sure documentation is up to date or create PR that can be merged after release, Android only: Publish to Bintray
 - Plugins: Make sure `README.md` is correct
+- Tools: cordova-lib: Update `platformsConfig.json`, all: update cross dependencies between libraries, 
 
 The detailed documentation below does include these at the appropriate locations.
 

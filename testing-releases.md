@@ -17,7 +17,13 @@ b) After the release was made and you now want to make sure the archive is good:
 
 ### Plugins
 
-TODO
+Assumes plugin is checkout out next to `cordova-mobile-spec`:
+
+```bash
+node cordova-mobile-spec/createmobilespec/createmobilespec.js --android --global --plugins="cordova-plugin-vibration"
+```
+
+This should start a black-ish app with a "Plugin tests" button. When clicking it you end up in a screen with "Auto Tests" and "Manual Tests" buttons. You should run both and see if all/most/the expected ones succeed.
 
 ### Platforms
 

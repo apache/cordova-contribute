@@ -52,7 +52,7 @@ This should start a grey-ish app with "Auto Tests" and "Manual Tests" buttons. Y
 
 ### Plugin Tests via Mobilespec
 
-Historically the release process documentation also advised developers to use `cordova-mobile-spec` to create an app that includes the [Plugin Tests](#plugin-tests). As this is error prone and doesn't give additional insight to the [Plugin Tests](#plugin-tests), it is not recommended any more.
+Historically the release process documentation also advised developers to use [`cordova-mobile-spec`](https://github.com/apache/cordova-mobile-spec) to create an app that includes the [Plugin Tests](#plugin-tests). As this is error prone and doesn't give additional insight to the [Plugin Tests](#plugin-tests), it is not recommended any more and only included here for completeness.
 
 <details>
   <summary>Instructions</summary>
@@ -72,13 +72,15 @@ The following commands all assume to be run in a folder that includes the platfo
 
 ### Platform + Plugins via Mobilespec
 
-Create and run a [mobile-spec](https://github.com/apache/cordova-mobile-spec/) project:
+Create and run a [`cordova-mobile-spec`](https://github.com/apache/cordova-mobile-spec/) project:
 
 ```bash
 ./cordova-mobile-spec/createmobilespec/createmobilespec.js --android --forceplugins
 (cd mobilespec && cordova run android --device)
 (cd mobilespec && cordova run android --emulator)
 ```
+
+TODO Instructions on how to use the _actual_ mobilespec tests that do not come from the plugins
 
 This should start a black-ish app with a "Plugin tests" button. When clicking it you end up in a screen with "Auto Tests" and "Manual Tests" buttons. You should run both and see if all/most/the expected ones succeed.
 
@@ -126,5 +128,5 @@ TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-proce
 
 ## Other
 
-TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-process.md#test
+TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-process.md#test  
 TODO https://github.com/apache/cordova-coho/blob/master/docs/coho-release-process.md#test

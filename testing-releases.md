@@ -7,7 +7,7 @@ This document describes how to test a release of a Apache Cordova component befo
   * [General Testing](#general-testing)
 - [Plugins](#plugins)
   * [Plugin Tests](#plugin-tests)
-  * [Plugin Tests via Mobilespec](#plugin-tests-via-mobilespec)
+  * [Manual Testing](#manual-testing)
 - [Platforms](#platforms)
   * [Platform + Plugins via Mobilespec](#platform--plugins-via-mobilespec)
   * [Hello World app via CLI](#hello-world-app-via-cli)
@@ -21,10 +21,10 @@ This document describes how to test a release of a Apache Cordova component befo
 
 ### Get the Code
 
-The code of the component you want to test should be in a folder with the name of the component (e.g. `cordova-plugin-vibration` or `cordova-ios`):
+The code of the component you want to test should be in a folder with the name of the component (e.g. `cordova-plugin-vibration`, `cordova-cli`, `cordova-ios` etc.):
 
 a) Before the release was actually made: The component should be checked out via git.  
-b) After the release was made and you now want to make sure the archive is good to be able to [vote for it](verify-release-vote.md): Download the `.tgz` source code artifact linked in the `[VOTE]` email on the dev mailing list. Unpack the archive, and move the content of `package` into a folder named after the component, then run `npm install` to install the dependencies.
+b) While the release is in the "Vote" stage and you now want to make sure the archive is good to be able to [vote for it](verify-release-vote.md): Download the `.tgz` source code artifact linked in the `[VOTE]` email on the dev mailing list. Unpack the archive, and move the content of `package` into a folder named after the component, then run `npm install` to install the dependencies.
 
 ### General Testing
 
@@ -63,6 +63,20 @@ node cordova-mobile-spec/createmobilespec/createmobilespec.js --android --global
 
 This should start a black-ish app with a "Plugin tests" button. When clicking it you end up in a screen with "Auto Tests" and "Manual Tests" buttons. You should run both and see if all/most/the expected ones succeed.
 </details>
+
+### Manual Testing
+
+[Plugin Tests](#plugin-tests) most probably do not cover all functionality of a plugin, especially Preferences that can be set via `config.xml` or functionality that was just added to the plugin. Check the `RELEASENOTES.md` file to find out about such functionality and 
+
+```bash
+cd ..
+cordova create pluginTestAppManual
+cd pluginTestAppManual
+cordova plugin add ../cordova-plugin-vibration
+# Implement the functionality in `www/index.html`
+cordova platform add android
+cordova run android
+```
 
 ## Platforms
 

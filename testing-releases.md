@@ -14,6 +14,7 @@ This document describes how to test a release of a Apache Cordova component befo
   * [`/bin` scripts](#bin-scripts)
   * [`cordova-lib` tests](#cordova-lib-tests)
   * [cordova.js](#cordovajs)
+  * [All Plugin Tests](#all-plugin-tests)
 - [Tooling](#tooling)
 - [Other](#other)
 
@@ -135,6 +136,11 @@ TODO https://github.com/apache/cordova-coho/blob/master/docs/platforms-release-p
 ### cordova.js
 
 TODO Some kind of tests (maybe via plugins) that test if the cordova.js functionality works as expected
+
+### All Plugin Tests
+
+TODO Simpler way to add all plugins, their test plugins and `cordova-plugin-test-framework` to a new app created with the platform so that one can run the automated and manual tests (as a replacement for "[Platform + Plugins via Mobilespec](#platform--plugins-via-mobilespec)")
+
 
 ## Tooling
 

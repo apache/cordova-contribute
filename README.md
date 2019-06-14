@@ -9,6 +9,7 @@ This repository contains documents describing everything a contributor of Apache
 - [Create a minimal reproduction repository](create-reproduction.md)
 - [Deprecation and Archiving of Repositories](deprecation.md)
 - [Testing Cordova](testing.md)
+- [Testing a Release](testing-releases.md)
 
 ### Process
 

@@ -43,7 +43,7 @@ Apache Cordova uses a variant of [Trunk Based Development](https://trunkbaseddev
 
 - Feature development is done in feature branches or branches of forks. 
 - Those are merged via Pull Requests that integrate their changes back into `master`.
-- [Release branches](#release-branch) are used for patch releases if necessary.
+- [Release branches](#release-branch) are used for releases if necessary.
 
 ### Release Branch
 

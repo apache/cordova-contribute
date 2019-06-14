@@ -7,7 +7,7 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
 - Checkout `master` of the project you want to release
 - Find out if your release requires a release branch (instead of releasing from `master` directly):  
   a) Are there any commits on `master` that should not be part of the release?  
-  b) If patch release: Is there already a release branch for a previous patch release for this minor version?
+  b) If patch release: Is there already a release branch for a previous patch release for this minor version?  
   c) Do you want to do a patch release to an older minor (`1.2.3` after `1.3.0` has already been released) or a minor release after there was a new major release (`1.7.0` after `2.0.0` has already been released)
 - Only if yes: 
   - _Create_ a release branch (e.g. `1.2.x`) on the last "good" commit (before the first one that should not be included in the release) or last released tag/commit and _check it out_ (or _check out_ the existing release branch for b))

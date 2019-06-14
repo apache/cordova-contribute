@@ -14,6 +14,7 @@ Usually npm based packages, as Apache Cordova uses to distribute its components,
     - `.java` file that has a `CORDOVA_VERSION`
   - iOS
     - `CDVAvailability.h` has two `#define` lines that list the version
+
 ### Plugins
 
 - `plugin.xml`, `version` attribute of `plugin` tag

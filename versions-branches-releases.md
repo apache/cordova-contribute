@@ -10,7 +10,7 @@ This document describes how Apache Cordova versions and manages its packages.
 - [Release](#release)
   * [Release Preparation](#release-preparation)
   * [Tags](#tags)
-  * [Apache way: Votes and Release Tags](#apache-way-votes-and-release-tags)
+  * [Apache Process: Votes and Release Tags](#apache-process-votes-and-release-tags)
   * [Publish](#publish)
 - [Release Process Documentation](#release-process-documentation)
 
@@ -59,11 +59,11 @@ During the release preparation the commit messages of changes that happened are 
 
 Tags are used to to indicate versions (e.g. `1.1.0`). Tagging happens after all the work for a release has been done.
 
-### Apache way: Votes and Release Tags
+### Apache Process: Votes and Release Tags
 
-As Cordova is an Apache Software Foundation project, we follow the a special process during our releases:
+As Cordova is an Apache Software Foundation project, we have some additional special steps during our releases:
 
-- When tagging a "release candidate" you do not use the final release version number, but e.g. `vote/1.1.0` to indicate that this is not a release tag that still has to be voted on.
+- When tagging a "release" you do not use the final release version number, but e.g. `vote/1.1.0` to indicate that this is not a release tag that still has to be voted on.
 - This tag is then archived into an archive and uploaded to a temporary location on the Apache SVN server.
 - Then there is a [release vote on the mailing list](release-voting.md) to determing if the release can happen as planned.
 - Voted on and accepted releases get an additional permanent "release tag" (e.g. `1.1.0`) and the archive is moved to another, permanent location on the Apache SVN server.

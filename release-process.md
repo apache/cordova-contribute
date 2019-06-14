@@ -4,35 +4,33 @@
 
 This describes the _technical_, theoretical steps of a release. (For all the _organizational_ steps and actual commands to execute, please refer to the [Detailed Release Process Documentation](#detailed-release-process-documentation) below.)
 
-TODO maybe rewrite release-from-master focused with fallback "needs release branch" instead of release-from-branch focused.
-
-- Decide on release type:   
-  a) minor/major  
-  b) patch
-- Checkout correct branch:   
-  - If minor/major: `master`  
-  - If patch: existing release branch
+- Checkout `master` of the project you want to release
+- Find out if you can release from `master` directly or require a release branch:  
+  a) Are there any commits on `master` that should not be part of the release?
+  b) Do you want to do a patch release to an older minor (`1.2.3` after `1.3.0` has already been released) or a minor release after there was a new major release (`1.7.0` after `2.0.0` has already been released)
+  - Only if yes: 
+    - _Create_ a release branch (e.g. `1.2.x`) on the last "good" commit (before the first one that should not be included in the release) or last released tag/commit and check it out
+    - _Cherry pick_ any further commits from `master` that should be included to the checked out release branch
+    - Do any manual changes that need to be done (e.g. to fix a bug) and _commit_ 
 - Prepare Release
-  - If patch: _Cherry pick_ fixes from `master` (or create on release branch directly or via PR and _commit_)
   - [Code Maintenance](code-maintenance.md)
-  - If major (and not bumped manually with breaking commit before): Bump major and _commit_
+  - If minor or major release (and not bumped manually already): Bump minor or major and _commit_
   - [Test](testing-releases.md)
     - Fix any regressions and _commit_
   - Create, curate Release Notes into `RELEASENOTES.md` and _commit_
 - Release
   - Remove `-dev` suffix in version and Release Notes (and _commit_)
-  - _Tag_
+  - _Tag_ as `vote/x.y.z`
   - Apache: Create archive and upload to [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/)
   - Bump patch + add `-dev` back (and _commit_)
-  - If minor/major: _Create_ new release branch
-  - _Push_ all changes, release branch and tag
+  - _Push_ all changes and tag
 - Vote
   - Other PMC members [test the release](testing-releases.md) and vote
 - On success:
   - Apache: Promote from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/) to [`dist/release`](https://dist.apache.org/repos/dist/release/cordova/)
-  - Apache: Add `rel/` tag
+  - Apache: Add `x.y.z` release tag
   - Publish archive (!) to npm
-  - If patch: Cherry pick release notes and version bump commit from release branch to `master`
+  - If releasing from release branch: Cherry pick release notes to `master`
   - _Push_ changes and tag
 - On failure:
   - Remove created tag (and _push_), delete uploaded archive from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/), unbump patch on release branch (and _commit_ and _push_)

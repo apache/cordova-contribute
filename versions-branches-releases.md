@@ -23,18 +23,19 @@ This document describes how Apache Cordova versions and manages its packages.
   > - MAJOR version when you make incompatible API changes,
   > - MINOR version when you add functionality in a backwards-compatible manner, and
   > - PATCH version when you make backwards-compatible bug fixes.
-- A `-dev` suffix is added to versions in repos to indicate unreleased code (as platforms and plugins can be installed from `master` via CLI). It is temporarily removed during the [release process](#release) and added back with the [version bump](#version-bump).
+- A `-dev` suffix is added to versions in repos to indicate unreleased code (as platforms and plugins can be installed from a repository's `master` branch via Cordova CLI). This suffix is only removed during the [release process](#release) and added back with the [version bump](#version-bump).
 
 ### Version Bump
 
 The version of a package is "bumped" (increased):
 
 - automatically 
-  - after release, in preparation of next release: 
-    - on minor or major release: bump minor (on `master`)
-    - on patch release: bump patch (on release branch)
+  - after release, in preparation of next release: bump patch  (`#.#.x`)
 - manually
-  - on breaking commit (or latest before release): bump major
+  - on feature adding commits: bump minor (`#.x.#`)
+  - on breaking commit (or latest before release): bump major (`x.#.#`)
+
+If a [release branches](#release-branch) is required, the version bump may happen on the release branch instead of `master`.
 
 ## Branches
 
@@ -42,7 +43,11 @@ Apache Cordova uses a variant of [Trunk Based Development](https://trunkbaseddev
 
 - Feature development is done in feature branches or branches of forks. 
 - Those are merged via Pull Requests that integrate their changes back into `master`.
-- [Release branches](#release-branch) are used for patch releases.
+- [Release branches](#release-branch) are used for patch releases if necessary.
+
+### Release Branch
+
+Cordova uses release branches for releases only if necessary: If a new patch or minor release from `master` is not possible as it already includes other changes that should or can not be part of the planned release, we create a release branch (e.g. `1.0.x` for an upcoming `1.0.1` patch release, or `2.1.x` for an upcoming `2.1.0` minor release). New changes added in those release branches should be merged back to `master` if applicable (release notes or bug fixes: yes, version number changes: no).
 
 ## Release
 
@@ -54,15 +59,14 @@ During the release preparation the commit messages of changes that happened are 
 
 Tags are used to to indicate versions (e.g. `1.1.0`). Tagging happens after all the work for a release has been done.
 
-### Release Branch
-
-Cordova uses release branches for (possible) future patch releases: On the release of a new minor or major version of a package a new release branch (e.g. `1.0.x` for a `1.0.0` release) is automatically created. Future bug fixes should usually be cherry picked from `master` to that release branch before releasing a patch update.
-
 ### Apache way: Votes and Release Tags
 
-- Tags are archived into a file and uploaded to a temporary location on the Apache SVN server
-- Then there is a [release vote on the mailing list](release-voting.md)
-- Voted on and accepted releases get an additional permanent "release tag" (e.g. `rel/1.1.0`) and are moved to another, permanent location on the Apache SVN server
+As Cordova is an Apache Software Foundation project, we follow the a special process during our releases:
+
+- When tagging a "release candidate" you do not use the final release version number, but e.g. `vote/1.1.0` to indicate that this is not a release tag that still has to be voted on.
+- This tag is then archived into an archive and uploaded to a temporary location on the Apache SVN server.
+- Then there is a [release vote on the mailing list](release-voting.md) to determing if the release can happen as planned.
+- Voted on and accepted releases get an additional permanent "release tag" (e.g. `1.1.0`) and the archive is moved to another, permanent location on the Apache SVN server.
 
 ### Publish
 

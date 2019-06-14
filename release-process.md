@@ -29,9 +29,9 @@ This describes the _technical_, theoretical steps of a release. (For all the _or
   - Other PMC members [test the release](testing-releases.md) and vote
 - On success:
   - Apache: Promote from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/) to [`dist/release`](https://dist.apache.org/repos/dist/release/cordova/)
-  - Apache: Add `x.y.z` release tag
+  - Add `x.y.z` release tag
   - Publish archive (!) to npm
-  - If releasing from release branch: Cherry pick release notes to `master`
+  - If releasing from release branch: Cherry pick release notes (and possible other commits) to `master`
   - _Push_ changes and tag
 - On failure:
   - Remove created tag (and _push_), delete uploaded archive from [`dist/dev`](https://dist.apache.org/repos/dist/dev/cordova/), unbump patch on release branch (and _commit_ and _push_)

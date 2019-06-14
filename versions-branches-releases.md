@@ -29,11 +29,11 @@ This document describes how Apache Cordova versions and manages its packages.
 
 The version of a package is "bumped" (increased):
 
-- automatically 
-  - after release, in preparation of next release: bump patch  (`#.#.x`)
-- manually
-  - on feature adding commits: bump minor (`#.x.#`)
-  - on breaking commit (or latest before release): bump major (`x.#.#`)
+- automatically (after release)
+  - in preparation of next release: bump patch  (`#.#.x`)
+- manually (when it happens or latest before release)
+  - on commits adding new features: bump minor (`#.x.#`)
+  - on commit breaking existing functionality: bump major (`x.#.#`)
 
 If a [release branches](#release-branch) is required, the version bump may happen on the release branch instead of `master`.
 

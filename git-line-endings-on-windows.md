@@ -12,9 +12,10 @@ Fix automatically:
 Commit everything, delete everything but `.git`, `git reset`.
 
 Fix manually:
-Find files (and lines) that still have CRLF:
-`grep -Pnr --include=* --exclude-dir=\.git '\r$' .` via https://stackoverflow.com/a/33281752/252627
-`find . -not -type d -exec file "{}" ";" | grep CRLF` via https://stackoverflow.com/a/73969/252627
-Convert: `dos2unix`
+
+- Find files (and lines) that still have CRLF:
+  - `grep -Pnr --include=* --exclude-dir={\.git,node_modules} '\r$' .' .` ([via](https://stackoverflow.com/a/33281752/252627))
+  - `find . -not -type d -exec file "{}" ";" | grep CRLF` ([via](https://stackoverflow.com/a/73969/252627))
+- Convert: `dos2unix`
 
 Additional input via https://gist.github.com/ajdruff/16427061a41ca8c08c05992a6c74f59e#file-fix-git-line-endings-L31

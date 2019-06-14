@@ -5,7 +5,7 @@
 This describes the _technical_, theoretical steps of a release. (For all the _organizational_ steps and actual commands to execute, please refer to the [Detailed Release Process Documentation](#detailed-release-process-documentation) below.)
 
 - Checkout `master` of the project you want to release
-- Find out if your rlease requires a release branch (instead of releasing from `master` directly):  
+- Find out if your release requires a release branch (instead of releasing from `master` directly):  
   a) Are there any commits on `master` that should not be part of the release?  
   b) If patch release: Is there already a release branch for a previous patch release for this minor version?
   c) Do you want to do a patch release to an older minor (`1.2.3` after `1.3.0` has already been released) or a minor release after there was a new major release (`1.7.0` after `2.0.0` has already been released)

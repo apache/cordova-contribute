@@ -12,9 +12,8 @@
 - `cort update-release-notes`
 - Manual: Curate release notes
 - `cort version:undev`
-- `cort release:commit` (TODO 1 commit for release notes, 1 commit for version changes)
+- `cort release:commit`
 - `cort release:votetag` (TODO, currently `release:tag`)
-- `cort release:push`
 - `cort apache:archive`
 - `cort apache:upload`
 - `cort apache:votemail`
@@ -23,7 +22,8 @@
 
 - `cort version:bump`
 - `cort version:dev`
-- `cort ???` (commit and push bumped and deved version string)
+- `cort release:preparecommit`
+- `cort release:push`
 
 ## Finish
 

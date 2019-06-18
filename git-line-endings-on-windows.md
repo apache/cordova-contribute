@@ -9,7 +9,7 @@ Solution: `.gitattributes` with `* text eol=lf`. Tells git to always use LF, als
 Caution: Files created locally with CRLF stay that way locally.
 
 Fix automatically:
-Commit everything, delete everything but `.git`, `git reset`.
+Commit everything, delete everything but `.git`, `git reset --hard`.
 
 Fix manually:
 

@@ -8,14 +8,20 @@ breaks down when using working copy to create a release with e.g. `npm pack` or 
 Solution: `.gitattributes` with `* text eol=lf`. Tells git to always use LF, also on Windows.
 Caution: Files created locally with CRLF stay that way locally.
 
-Fix automatically:
+## Find problematic files
+
+- `grep -Pnr --include=* --exclude-dir={\.git,node_modules} '\r$' .` ([via](https://stackoverflow.com/a/33281752/252627))
+- `find . -not -type d -exec file "{}" ";" | grep CRLF` ([via](https://stackoverflow.com/a/73969/252627))
+  
+## Fix automatically
+
 Commit everything, delete everything but `.git`, `git reset --hard`.
 
-Fix manually:
+## Fix manually
 
-- Find files (and lines) that still have CRLF:
-  - `grep -Pnr --include=* --exclude-dir={\.git,node_modules} '\r$' .` ([via](https://stackoverflow.com/a/33281752/252627))
-  - `find . -not -type d -exec file "{}" ";" | grep CRLF` ([via](https://stackoverflow.com/a/73969/252627))
-- Convert: `dos2unix`
+- Manually in editor of choice
+- `dos2unix`
+
+---
 
 Additional input via https://gist.github.com/ajdruff/16427061a41ca8c08c05992a6c74f59e#file-fix-git-line-endings-L31

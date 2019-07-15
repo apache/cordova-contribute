@@ -18,7 +18,7 @@ The [default labels](https://help.github.com/articles/about-labels/#using-defaul
 - ![#7057ff](https://placehold.it/20/7057ff/000000?text=+) `good first issue`: Good for newcomers
 - ![#008672](https://placehold.it/20/008672/000000?text=+) `help wanted`: Extra attention is needed
 - ![#e4e669](https://placehold.it/20/e4e669/000000?text=+) `invalid`: This doesn't seem right
-- ![#d876e3](https://placehold.it/20/d876e3/000000?text=+) `question`: Further information is requested
+- ![#d876e3](https://placehold.it/20/d876e3/000000?text=+) `question`: Further information is requested - to be replaced by (or renamed to) `info-needed` (see below)
 - ![#ffffff](https://placehold.it/20/ffffff/000000?text=+) `wontfix`: This will not be worked on
 
 The label names `good first issue` and `help wanted` have [special meaning](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/) on GitHub.
@@ -29,6 +29,7 @@ The list above has some ~~strike through~~ text. These are our changes to the de
 
 ### Custom labels
 
+- ![#d876e3](https://placehold.it/20/d876e3/000000?text=+) `info-needed`: Further information is requested
 - ![#0e8a16](https://placehold.it/20/0e8a16/000000?text=+) `feature`: New functionality that requires new code
 - ![#1d76db](https://placehold.it/20/1d76db/000000?text=+) `discussion`: Creator is open to suggestions or wants to discuss how something should be implemented
 - ![#ccc](https://placehold.it/20/ccc/000000?text=+) `support`: Support questions that want to understand how something works, need help debugging their individual problem etc. are closed and tagged with this label.

@@ -43,6 +43,14 @@ For plugin repositories it makes sense to categorize Issues - e.g. a bug report 
 - ![#fef2c0](https://placehold.it/20/fef2c0/000000?text=+) `platform: browser`
 - ![#d4c5f9](https://placehold.it/20/d4c5f9/000000?text=+) `platform: windows`
 
+#### `has-*` 
+
+To contributors some questions are very important even before opening an issue: Does it have a reproduction project? Does it already have a Pull Request that claims to solve the problem? To signify this, we use `has-*` labels:
+
+- ![#5319e7](https://placehold.it/20/5319e7/000000?text=+) `has-pr`
+- ![#5319e7](https://placehold.it/20/5319e7/000000?text=+) `has-repro`
+
+
 <!--
 ### Possible future labels
 

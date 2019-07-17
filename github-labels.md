@@ -90,6 +90,8 @@ P0: critical
 
 ## Distribute GitHub Labels to multiple repositories
 
+As the labels above are not distributed to all Cordova repositories automatically yet, they have to be created on demand. Contributors of Apache Cordova are able to just create any label they need manually.
+
 TODO
 <!--
 Pseudocode:

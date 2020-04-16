@@ -21,17 +21,19 @@
 
 # Contributing to Apache Cordova
 
-Anyone can contribute to Cordova. And we need your contributions.
+Anyone can contribute to the Apache Cordova project, and we welcome your contributions.
 
-There are multiple ways to contribute: report bugs, improve the docs, and
-contribute code.
-  
-For instructions on this, start with the
-[contribution overview](http://cordova.apache.org/contribute/).
+There are multiple ways to contribute to this project:
 
-The details are explained there, but the important items are:
- - Check for Github issues that corresponds to your contribution and link or create them if necessary.
- - Run the tests so your patch doesn't break existing functionality.
+* Report Bugs
+* Improve Documentation
+* Write Source Code
 
-We look forward to your contributions!
+For detailed instructions, please read our [Contribution Overview](http://cordova.apache.org/contribute/) and [Contributor Guidelines](https://cordova.apache.org/contribute/contribute_guidelines.html) on our website.
 
+The most important items are:
+
+* Check for Github issues that correspond to your contribution and link them or create a new issue if necessary.
+* Run the repository's tests to confirm that the patch does not break existing functionality.
+
+We are looking forward to your contributions!

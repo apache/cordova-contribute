@@ -7,7 +7,7 @@
 
 ### 1. Vote
 
-Similar to other important decisions, Apache Cordova uses a [voting process](https://www.apache.org/foundation/how-it-works.html#decision-making) on deprecations and archiving of components. If you intend to deprecate or archive a component or repository, send an email to the [appropriate mailing list](https://cordova.apache.org/contact/) describing the intended action and start a vote on it.  
+Similar to other important decisions, Apache Cordova uses a [voting process](https://www.apache.org/foundation/how-it-works.html#decision-making) on deprecations and archiving of components. If you intend to deprecate or archive a component or repository, send an email to the [appropriate mailing list](https://cordova.apache.org/contact/) describing the intended action and start a vote on it.
 
 Only proceed if the vote succeeds.
 
@@ -21,7 +21,7 @@ Add the [Deprecation Notice Template](#deprecation-notice) to the `README.md` of
 
 ### 4. Archiving only: Close Issues and Pull Requests
 
-As archiving will make Issues and Pull Requests read only, it is common and [suggested by GitHub](https://help.github.com/articles/about-archiving-repositories/) to clean up issues and pull requests before archiving a repository. If there are open issues or PRs with the component's repository, please close them with the [suggested Issue and Pull Request closing text](#suggested-issue-and-pull-request-closing-text) or similar. 
+As archiving will make Issues and Pull Requests read only, it is common and [suggested by GitHub](https://help.github.com/articles/about-archiving-repositories/) to clean up issues and pull requests before archiving a repository. If there are open issues or PRs with the component's repository, please close them with the [suggested Issue and Pull Request closing text](#suggested-issue-and-pull-request-closing-text) or similar.
 
 ### 5. Request GitHub repository changes from Apache INFRA
 
@@ -36,8 +36,8 @@ For archiving:
 
 1. Make sure the deprecation notice is in `README.md` and contains all information.
 1. Make sure there are no more open Issues and Pull Requests for this repository.
-1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that   
-  a) the repository description is prefixed with `[DEPRECATED] ` and   
+1. [Open an issue](https://issues.apache.org/jira/browse/INFRA) and request that
+  a) the repository description is prefixed with `[DEPRECATED] ` and
   b) the repository is archived on GitHub.
 
 ### 6. Announce

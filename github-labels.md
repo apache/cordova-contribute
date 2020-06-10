@@ -57,8 +57,8 @@ work-in-progress: Someone is currently working on this Pull Request.
 triage
 needs investigation
 needs info
-needs reply 
-cannot reproduce 
+needs reply
+cannot reproduce
 
 status: auto-closed
 status: waiting-for-reply
@@ -108,12 +108,12 @@ Go through all repositories
       - number of issues
 
 Existing Alternatives:
-- http://www.dorukdestan.com/github-label-manager/ 
+- http://www.dorukdestan.com/github-label-manager/
   - https://medium.com/@dtinth/how-to-copy-github-labels-from-one-project-to-another-1857adc73e0f
   - terrible security practices as basic auth is used
 - https://github.com/HewlettPackard/yoda/blob/master/docs/MANUAL.md#label-manager
   https://hewlettpackard.github.io/yoda/yoda-label-manager.html
-- https://gist.github.com/symm/ba69f2b715558c61b1a2 
+- https://gist.github.com/symm/ba69f2b715558c61b1a2
   - Could be used for a simple PHP script
 - https://github.com/BlueAcornInc/github-label-manager
   uses https://github.com/jasonbellamy/git-label

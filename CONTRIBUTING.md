@@ -29,11 +29,11 @@ There are multiple ways to contribute to this project:
 * Improve Documentation
 * Write Source Code
 
-For detailed instructions, please read our [Contribution Overview](http://cordova.apache.org/contribute/) and [Contributor Guidelines](https://cordova.apache.org/contribute/contribute_guidelines.html) on our website.
+For detailed instructions, please read our [Contribution Overview](https://cordova.apache.org/contribute/) and [Contributor Guidelines](https://cordova.apache.org/contribute/contribute_guidelines.html) on our website.
 
 The most important items are:
 
-* Check for Github issues that correspond to your contribution and link them or create a new issue if necessary.
+* Check for GitHub issues that correspond to your contribution and link them or create a new issue if necessary.
 * Run the repository's tests to confirm that the patch does not break existing functionality.
 
 We are looking forward to your contributions!

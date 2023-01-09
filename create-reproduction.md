@@ -1,6 +1,6 @@
 # Create a Minimal Reproduction Repository or Sample
 
-When reporting an issue or bug for any of the Apache Cordova packages, it is helpful to create and include a link to a reproduction repository or sample. This helps maintainers when reproducing, evaluating, debugging and finally fixing the associated issue.
+When reporting an issue or bug for any of the Apache Cordova packages, it is helpful to create and include a link to a reproduction repository or sample. This helps maintainers when reproducing, evaluating, debugging and finally fixing the associated issue. See also [this article on Stack Overflow](https://stackoverflow.com/help/minimal-reproducible-example).
 
 ## Why?
 

@@ -24,7 +24,7 @@ This document describes how to test a release of a Apache Cordova component befo
 
 The code of the component you want to test should be in a folder with the name of the component (e.g. `cordova-plugin-vibration`, `cordova-cli`, `cordova-ios` etc.):
 
-a) Before the release was actually made: The component should be checked out via git.  
+a) Before the release was actually made: The component should be checked out via git.
 b) While the release is in the "Vote" stage and you now want to make sure the archive is good to be able to [vote for it](verify-release-vote.md): Download the `.tgz` source code artifact linked in the `[VOTE]` email on the dev mailing list. Unpack the archive, and move the content of `package` into a folder named after the component, then run `npm install` to install the dependencies.
 
 ### General Testing
@@ -67,7 +67,7 @@ This should start a black-ish app with a "Plugin tests" button. When clicking it
 
 ### Manual Testing
 
-[Plugin Tests](#plugin-tests) most probably do not cover all functionality of a plugin, especially Preferences that can be set via `config.xml` or functionality that was just added to the plugin. Check the `RELEASENOTES.md` file to find out about such functionality and 
+[Plugin Tests](#plugin-tests) most probably do not cover all functionality of a plugin, especially Preferences that can be set via `config.xml` or functionality that was just added to the plugin. Check the `RELEASENOTES.md` file to find out about such functionality and
 
 ```bash
 cd ..
@@ -148,5 +148,5 @@ TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-proce
 
 ## Other
 
-TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-process.md#test  
+TODO https://github.com/apache/cordova-coho/blob/master/docs/tools-release-process.md#test
 TODO https://github.com/apache/cordova-coho/blob/master/docs/coho-release-process.md#test

@@ -52,7 +52,7 @@ Cordova projects use several different types of tests:
 
 #### Syntax Checker
 
-- Check if the code of a project follows specific syntax guidelines.  
+- Check if the code of a project follows specific syntax guidelines.
 - Usually uses [`eslint`](https://eslint.org/), which is "a fully pluggable tool for identifying and reporting on patterns in JavaScript".
 
 #### Unit Tests
@@ -134,11 +134,11 @@ TODO Explain: Native code is being execised vs. JS part with all the other test 
 To automate the creating of a test app and the test execution process [`cordova-paramedic`](https://github.com/apache/cordova-paramedic) can be be used:
 
 1. Install `cordova-paramedic` (`npm install -g ...` or clone + `npm install`)
-2. Run Paramedic for the current plugin:  
+2. Run Paramedic for the current plugin:
     ```
-    node /tmp/paramedic/main.js 
-      --config pr/$PLATFORM 
-      --plugin $(pwd) 
+    node /tmp/paramedic/main.js
+      --config pr/$PLATFORM
+      --plugin $(pwd)
     ```
 3. App is built, setup; Tests are run and results reported
 

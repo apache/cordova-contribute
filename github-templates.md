@@ -62,7 +62,7 @@ Distributing these templates manually would take quite some time. For that reaso
     folders = Dir.glob('*').select {|f| File.directory? f}
     @source = "../cordova-contribute/.github"
     require 'fileutils'
-    folders.each do |folder| 
+    folders.each do |folder|
         FileUtils.copy_entry @source, "#{folder}/.github"
         Dir.chdir(folder)
         `git add .github`

@@ -4,7 +4,7 @@ When reporting an issue or bug for any of the Apache Cordova packages, it is hel
 
 ## Why?
 
-The goal of the reproduction repository is to replicate the bug in a minimal project that contains only the necessary platforms, libraries, and plugins to reproduce the bug. 
+The goal of the reproduction repository is to replicate the bug in a minimal project that contains only the necessary platforms, libraries, and plugins to reproduce the bug.
 
 For a Cordova maintainer it can be a lot of work to reproduce your specific issue as there are many aspects to your  working environment and source code. By creating a reproduction repository, you can prodive _all_ useful information to the maintainer and make this process much easier and faster.
 
@@ -17,7 +17,7 @@ The steps below show how to create a reproduction repository on GitHub. (Any pub
 ### TLDR:
 
 - Create a new Cordova project,
-- implement a reproduction of your problem, 
+- implement a reproduction of your problem,
 - put the project on Github,
 - and post the link to the repository in your issue.
 
@@ -25,7 +25,7 @@ The steps below show how to create a reproduction repository on GitHub. (Any pub
 
 1. [Create a new repository](https://github.com/new) on GitHub
 1. Insert a `Repository name`
-1. Select `Public` to make the repository publicly accessible  
+1. Select `Public` to make the repository publicly accessible
     **IMPORTANT:** Do not check "Initialize this repository with a README"
 1. Click `Create repository`
 

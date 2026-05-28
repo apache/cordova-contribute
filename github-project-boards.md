@@ -25,9 +25,9 @@ For Pull Requests we track their "review and merge progress" on project boards:
 
 #### Columns
 
-- Pull Requests start in the "New PR / Untriaged" column (added manually by using the "Add Card" functionality) 
-- They can then be sorted by a maintainer into columns according to their "review" readiness ("Blocked: Work in Progress", "Blocked: Conflict", "Blocked: Tests failing" or "Ready for Review").  
-- On review, merge, close etc. they are moved to other columns by automation ("Pending Approval", "Approved, waiting for Merge", "Merged, waiting for Release", "Closed/Abandoned").  
+- Pull Requests start in the "New PR / Untriaged" column (added manually by using the "Add Card" functionality)
+- They can then be sorted by a maintainer into columns according to their "review" readiness ("Blocked: Work in Progress", "Blocked: Conflict", "Blocked: Tests failing" or "Ready for Review").
+- On review, merge, close etc. they are moved to other columns by automation ("Pending Approval", "Approved, waiting for Merge", "Merged, waiting for Release", "Closed/Abandoned").
 - After release they are manually moved to the "Released" column.
 
 #### Labels
